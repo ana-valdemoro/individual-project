@@ -1,0 +1,45 @@
+#header{
+    width: 100%;
+    border: 1px solid black;
+    height: 181px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
+}
+
+#logo{
+    float: left;
+    width: 25%;     
+    margin-top: 35px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+}
+#logo img{
+    float:left; 
+    display: block;
+    height: 110px;
+    left: 125px;
+    top: 33px;
+    /*position: absolute;*/
+
+}
+#logo h2 {
+    
+    font-size: 30px;
+    font-family: 'Encode Sans Condensed'; /*, sans-serif;*/
+    font-style: normal;
+    font-weight: normal ;
+    line-height: 37px;
+   /* border: 1px solid black;*/
+    height: 40px;
+    width: 60%;
+    margin: 33px 0 0 auto;
+
+}
+
+.center{
+    width: 75%;
+    margin: 0px auto;
+}
+
+#menu{
+    width: 70%;
+    float: right;
+}
