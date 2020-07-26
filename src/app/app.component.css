@@ -1,13 +1,12 @@
 #header{
     width: 100%;
-    border: 1px solid black;
     height: 181px;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
 }
 
 #logo{
     float: left;
-    width: 25%;     
+    width: 30%;     
     margin-top: 35px;
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 }
@@ -21,8 +20,8 @@
 
 }
 #logo h2 {
-    
-    font-size: 30px;
+        
+        font-size: 30px;
     font-family: 'Encode Sans Condensed'; /*, sans-serif;*/
     font-style: normal;
     font-weight: normal ;
@@ -42,4 +41,28 @@
 #menu{
     width: 70%;
     float: right;
+    font-size: 26px;
+}
+#menu ul{
+    line-height: 127px;
+    /*width: 60%*/
+    float: right;
+}
+#menu ul li {
+    list-style: none;
+    height: 51px;
+    display: inline-block;
+    margin-left: 120px;
+    margin-right:100px;
+}
+#menu a{
+    text-decoration: none;
+    color: #000000;
+    transition: 300ms all;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+#menu a:hover{
+    color: #633abd;
 }
