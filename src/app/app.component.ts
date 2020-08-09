@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { APODService } from "src/app/services/apod.service";
 
 @Component({
   selector: 'app-root',
@@ -9,11 +8,12 @@ import { APODService } from "src/app/services/apod.service";
 export class AppComponent {
   title = 'individual-project';
 
-  constructor(private apodService :  APODService){
+  constructor(){
 
   }
-  async getPicture(){
-    let variable = await this.apodService.getAPOD();
-    console.log(variable);
+  onToggleSidenav(){
+
+  
   }
+
 }

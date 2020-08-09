@@ -11,7 +11,6 @@ export class APODService {
   getAPOD(): Promise<any>{
     return axios.get(this.url)
         .then(response => response.data)
-        
-        .catch(err => console.log(`Hay un error ${err}`))
+        .catch(err => console.log(`Hay un error ${err}`));
   }
 }

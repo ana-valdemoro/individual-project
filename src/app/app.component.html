@@ -1,24 +1,68 @@
-<header id="header">
+<!--<header id="header">
     <div class="center">
-        <!--Logo-->
+       
         <div id="logo">
             <img src="assets/images/nasa logo.png" class="app-logo" alt="Nasa logo">
-            <h2>Nasa project</h2>
+            <h2>Space Gallery</h2>
         </div>
 
 
-        <!--Menu-->
         <nav id="menu">
             <ul>
                 <li>
-                    <a href="#">APOD</a>
+                    <a href="#">Picture of the day</a>
                 </li>
                 <li>
-                    <a href="#">Asteroids NeoWs</a>
+                    <a href="#">Gallery</a>
                 </li>
             </ul>
         </nav>
+        
+     
+        <div class="clearfix"></div>
     </div>
-</header >
+</header >-->
 
-<button (click)="getPicture()">Get ASTRONOMY PICTURE OF THE DAY</button>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+        <mat-nav-list>
+            <a mat-list-item href="#" (click)="sidenav.close()">
+                Picture of the day
+            </a>
+            <a mat-list-item href="#" (click)="sidenav.close()">
+                Gallery
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <div id="logo">
+                <img src="assets/images/nasa logo.png" class="app-logo" alt="Nasa logo">
+                
+                <h2>Space Gallery</h2>
+            </div>
+            <div fxFlex  fxLayoutAlign="center" fxHide.xs>
+                <ul fxLayout fxLayoutGap="100px" class="navigation-items">
+                    <li>
+                        <a href="#">Picture of the day</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <div fxFlex  fxLayoutAlign="end" fxHide.gt-xs>  
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+
+        </mat-toolbar>
+        <main>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<div class="welcome-slider">
+    <p>Welcome to Space Gallery! A free online resource to look up astronomic pictures.</p>
+</div>
