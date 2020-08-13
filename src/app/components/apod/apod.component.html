@@ -1,5 +1,15 @@
-<div class="slider-center">
+<!--<div class="slider-center">
     <p>APOD is the acronim of Astronomy Picture of The Day. In fact, this website is one of the most popular websites across all federal agencies. 
     </p>
+</div>-->
+<div class="main-frame">
+    <div id="frame">
+        <span>Title:</span>
+        <p>{{dayPicture.title}}</p>
+        <span>Date</span>
+        <p>{{dayPicture.date}}</p>
+        <span>Description</span>
+        <p>{{dayPicture.explanation}}</p>
+    </div>
+    <img [src]="dayPicture.url"  alt="picture of the day">
 </div>
-<button (click)="getPicture()">Get ASTRONOMY PICTURE OF THE DAY</button>

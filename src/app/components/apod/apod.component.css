@@ -3,3 +3,28 @@
     border-radius: 10px;
     height: 99px;
 }
+
+.main-frame{
+    display: flex;
+    background: lightgreen;
+    place-content: space-around;
+    align-items: center;
+    height: 650px;
+
+}
+#frame{
+    background: #0B3D91;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    width: 480px;
+    /*height: 599px;*/
+    margin-left: -50px;
+}
+#frame span{
+    display: flex;
+}
+.main-frame img{
+    height: 520px;
+   
+}
