@@ -10,6 +10,7 @@ type astronomicData = {
   service_version: string;
   title: string;
   url: string;
+  videoId ?: string;
 }
 @Component({
   selector: 'app-apod',
@@ -17,7 +18,7 @@ type astronomicData = {
   styleUrls: ['./apod.component.css']
 })
 export class ApodComponent implements OnInit {
-  dayPicture: astronomicData = {
+  metaData: astronomicData = {
     date: "",
     explanation : "",
     hdurl: "",
@@ -32,7 +33,19 @@ export class ApodComponent implements OnInit {
     this.getPicture();
   }
   async getPicture(){
-    this.dayPicture = await this.apodService.getAPOD();
-    console.log(this.dayPicture);
+    this.metaData = await this.apodService.getAPOD();
+    console.log(this.metaData);
+    if (this.metaData.media_type == "video"){
+      this.getVideoId();
+    }
+  }
+
+  getVideoId(){
+   let inicio = this.metaData.url.lastIndexOf("/");
+   let fin = this.metaData.url.lastIndexOf("?");
+   this.metaData.videoId = this.metaData.url.substring(inicio+1, fin);
+   console.log(this.metaData.videoId);
+
+
   }
 }

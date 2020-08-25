@@ -12,6 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatListModule } from '@angular/material/list';
 import { MainComponent } from './components/main/main.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MainComponent } from './components/main/main.component';
     MatIconModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatListModule   
+    MatListModule,
+    YouTubePlayerModule   
   ],
   exports: [
     MatSidenavModule,

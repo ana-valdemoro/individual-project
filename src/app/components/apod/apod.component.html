@@ -5,11 +5,18 @@
 <div class="main-frame">
     <div id="frame">
         <span>Title:</span>
-        <p>{{dayPicture.title}}</p>
+        <p>{{metaData.title}}</p>
         <span>Date</span>
-        <p>{{dayPicture.date}}</p>
+        <p>{{metaData.date}}</p>
         <span>Description</span>
-        <p>{{dayPicture.explanation}}</p>
+        <p>{{metaData.explanation}}</p>
     </div>
-    <img [src]="dayPicture.url"  alt="picture of the day">
+    <div *ngIf="metaData.media_type == 'video'">
+        <youtube-player [videoId]="metaData.videoId"></youtube-player>
+    </div>
+    <div *ngIf="metaData.media_type == 'image'">
+        <img [src]="metaData.url"  alt="picture of the day">
+    </div>
+   
 </div>
+ 
