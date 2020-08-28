@@ -3,13 +3,18 @@
     </p>
 </div>-->
 <div class="main-frame">
-    <div id="frame">
-        <span>Title:</span>
-        <p>{{metaData.title}}</p>
-        <span>Date</span>
-        <p>{{metaData.date}}</p>
-        <span>Description</span>
-        <p>{{metaData.explanation}}</p>
+    <div id="data-frame">
+        <div class="sub-frame">
+            <span>Title:</span>
+            <p>{{metaData.title}}</p>
+        </div>
+        <div class="sub-frame">
+            <span>Date:</span>
+            <p>{{metaData.date}}</p>
+        </div>
+        <div class="sub-frame">
+        <p id="des"><span>Description: </span>{{metaData.explanation}}</p>
+        </div>
     </div>
     <div *ngIf="metaData.media_type == 'video'">
         <youtube-player [videoId]="metaData.videoId"></youtube-player>

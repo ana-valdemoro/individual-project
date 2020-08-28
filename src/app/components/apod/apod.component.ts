@@ -41,9 +41,9 @@ export class ApodComponent implements OnInit {
   }
 
   getVideoId(){
-   let inicio = this.metaData.url.lastIndexOf("/");
-   let fin = this.metaData.url.lastIndexOf("?");
-   this.metaData.videoId = this.metaData.url.substring(inicio+1, fin);
+   let start = this.metaData.url.lastIndexOf("/");
+   let end = this.metaData.url.lastIndexOf("?");
+   this.metaData.videoId = this.metaData.url.substring(start+1, end);
    console.log(this.metaData.videoId);
 
 

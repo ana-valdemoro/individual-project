@@ -11,20 +11,42 @@
     min-height: 650px;
 
 }
-#frame{
+#data-frame{
     background: #0B3D91;
     border-radius: 10px;
     color: white;
     display: flex;
-    /*min-width:  480px;*/
     max-width: 580px;
-    /*height: 599px;*/
-    margin-left: -50px;
+    align-items: center;
+    flex-direction: column;
 }
-#frame span{
-    display: flex;
+#data-frame .sub-frame>span{
+    flex-basis: 0px;
+    flex-grow: 1;
+    margin: 4px;
+ 
+}
+#data-frame span{
+    color: white;
+}
+#data-frame p{
+    color: #A0A0A0;
+    margin: 0;
+
+}
+#data-frame .sub-frame>p{
+    margin: 4px;
+    text-align: justify;
 }
 .main-frame img{
-    height: 520px;
+    height: 480px;
    
+}
+.sub-frame{
+    display: inline-flex;
+    margin: 5px;
+    justify-content: center;
+}
+#des{
+    flex-basis: 80%;
 }
