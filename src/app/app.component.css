@@ -102,7 +102,7 @@
     line-height: 27px;
 }*/
 mat-sidenav{
-    height: 250px;
+    /*height: 250px;*/
 }
 mat-sidenav-container, mat-sidenav-content, mat-sidenav{
     height:181px;
@@ -151,9 +151,10 @@ mat-toolbar{
 }
 
 @media (max-width:414px){
-    mat-toolbar{
+    mat-toolbar,mat-sidenav-container{
         height: 78px;
     }
+
     #logo {
         justify-content: space-between;
         width: 200px;

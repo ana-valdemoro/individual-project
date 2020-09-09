@@ -50,3 +50,22 @@
 #des{
     flex-basis: 80%;
 }
+
+@media(max-width: 925px){
+      
+    .main-frame{
+        flex-direction: column-reverse;
+        padding: 20px; 
+    }
+
+}
+
+@media (max-width:414px){
+
+    .main-frame{
+        font-size:14px;
+    }
+    .main-frame img{
+        height: 360px;
+    }
+}
